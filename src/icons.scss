@@ -1,0 +1,181 @@
+.icons-cl {
+  display: inline-block;
+  background-image: url(images/icons.png);
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  color: transparent;
+  padding: 0;
+
+  //
+  // Row 1
+  //
+  &.icons-cl-caret-1-n {
+    background-position: 0 0;
+  }
+
+  &.icons-cl-caret-1-ne {
+    background-position: -16px 0;
+  }
+
+  &.icons-cl-caret-1-e {
+    background-position: 2 * -16px 0;
+  }
+
+  &.icons-cl-caret-1-se {
+    background-position: 3 * -16px 0;
+  }
+
+  &.icons-cl-caret-1-s {
+    background-position: 4 * -16px 0;
+  }
+
+  &.icons-cl-caret-1-sw {
+    background-position: 5 * -16px 0;
+  }
+
+  &.icons-cl-caret-1-w {
+    background-position: 6 * -16px 0;
+  }
+
+  &.icons-cl-caret-1-nw {
+    background-position: 7 * -16px 0;
+  }
+
+  &.icons-cl-caret-2-n-s {
+    background-position: 8 * -16px 0;
+  }
+
+  &.icons-cl-caret-2-e-w {
+    background-position: 9 * -16px 0;
+  }
+
+  //
+  // Row 2
+  //
+  &.icons-cl-triangle-1-n {
+    background-position: 0 * -16px -16px;
+  }
+
+
+  &.icons-cl-triangle-1-e {
+    background-position: 2 * -16px -16px;
+  }
+
+  // ui-icon-triangle-1-ne  ui-icon-triangle-1-e  ui-icon-triangle-1-se  ui-icon-triangle-1-s  ui-icon-triangle-1-sw  ui-icon-triangle-1-w  ui-icon-triangle-1-nw  ui-icon-triangle-2-n-s  ui-icon-triangle-2-e-w
+
+
+  &.icons-cl-arrow-1-n {
+    background-position: 0 * -16px -32px;
+  }
+
+  &.icons-cl-arrow-1-w {
+    background-position: 6 * -16px -32px;
+  }
+
+  &.icons-cl-arrowstop-1-n {
+    background-position: 12 * -16px -32px;
+  }
+
+  &.icons-cl-arrowstop-1-s {
+    background-position: 14 * -16px -32px;
+  }
+
+  // ui-icon-arrow-1-n  ui-icon-arrow-1-ne  ui-icon-arrow-1-e  ui-icon-arrow-1-se  ui-icon-arrow-1-s  ui-icon-arrow-1-sw  ui-icon-arrow-1-nw  ui-icon-arrow-2-n-s  ui-icon-arrow-2-ne-sw  ui-icon-arrow-2-e-w  ui-icon-arrow-2-se-nw  ui-icon-arrowstop-1-n  ui-icon-arrowstop-1-e  ui-icon-arrowstop-1-s  ui-icon-arrowstop-1-w
+
+  &.icons-cl-arrowthick-1-n {
+    background-position: 0 * -16px -48px;
+  }
+
+  &.icons-cl-arrowthick-1-n {
+    background-position: 0 * -16px -48px;
+  }
+
+  &.icons-cl-arrowthick-1-w {
+    background-position: 6 * -16px -48px;
+  }
+
+
+  // ui-icon-arrowthick-1-ne  ui-icon-arrowthick-1-e  ui-icon-arrowthick-1-se  ui-icon-arrowthick-1-s  ui-icon-arrowthick-1-sw  ui-icon-arrowthick-1-nw  ui-icon-arrowthick-2-n-s  ui-icon-arrowthick-2-ne-sw  ui-icon-arrowthick-2-e-w  ui-icon-arrowthick-2-se-nw  ui-icon-arrowthickstop-1-n  ui-icon-arrowthickstop-1-e  ui-icon-arrowthickstop-1-s  ui-icon-arrowthickstop-1-w
+
+  &.icons-cl-arrowreturnthick-1-w {
+    background-position: 0 * -16px -64px;
+  }
+
+  &.icons-cl-arrowreturnthick-1-e {
+    background-position: 2 * -16px -64px;
+  }
+
+  // ui-icon-arrowreturnthick-1-n  ui-icon-arrowreturnthick-1-s  ui-icon-arrowreturn-1-w  ui-icon-arrowreturn-1-n  ui-icon-arrowreturn-1-e  ui-icon-arrowreturn-1-s  ui-icon-arrowrefresh-1-w  ui-icon-arrowrefresh-1-n  ui-icon-arrowrefresh-1-e  ui-icon-arrowrefresh-1-s
+  // ui-icon-arrow-4  ui-icon-arrow-4-diag  ui-icon-extlink  ui-icon-newwin  ui-icon-refresh  ui-icon-shuffle  ui-icon-transfer-e-w  ui-icon-transferthick-e-w
+
+  //
+  // Row 6
+  //
+  $list: folder-collapsed folder-open document document-b note mail-closed mail-open suitcase comment person print trash locked unlocked bookmark tag;
+  $x: 0;
+
+  @each $item in $list {
+    &.icons-cl-#{$item} {
+      background-position: $x * -16px -96px
+    }
+
+    $x: $x+1;
+  }
+
+  //
+  // Row 7
+  //
+  $list: home flag calculator cart pencil clock disk calendar zoomin zoomout search wrench gear heart star link;
+  $x: 0;
+
+  @each $item in $list {
+    &.icons-cl-#{$item} {
+      background-position: $x * -16px -112px
+    }
+
+    $x: $x+1;
+  }
+
+  //
+  // Row 8
+  //
+
+  &.icons-cl-close {
+    background-position: -80px -128px;
+  }
+
+  &.icons-cl-closethick {
+    background-position: -96px -128px;
+  }
+  // ui-icon-cancel  ui-icon-plus  ui-icon-plusthick  ui-icon-minus  ui-icon-minusthick  ui-icon-key  ui-icon-lightbulb  ui-icon-scissors  ui-icon-clipboard  ui-icon-copy  ui-icon-contact  ui-icon-image  ui-icon-video  ui-icon-script
+
+  &.icons-cl-alert {
+    background-position: 0 * -16px 9 * -16px;
+  }
+
+  &.icons-cl-help {
+    background-position: 3 * -16px 9 * -16px;
+  }
+
+  &.icons-cl-check {
+    background-position: 4 * -16px 9 * -16px;
+  }
+
+  // ui-icon-info  ui-icon-notice  ui-icon-bullet  ui-icon-radio-off  ui-icon-radio-on  ui-icon-pin-w  ui-icon-pin-s
+
+  &.icons-cl-play {
+    background-position: 0 * -16px 10 * -16px;
+  }
+
+  &.icons-cl-pause {
+    background-position: 1 * -16px 10 * -16px;
+  }
+
+// ui-icon-seek-next  ui-icon-seek-prev  ui-icon-seek-end  ui-icon-seek-first  ui-icon-stop  ui-icon-eject  ui-icon-volume-off  ui-icon-volume-on
+// ui-icon-power  ui-icon-signal-diag  ui-icon-signal  ui-icon-battery-0  ui-icon-battery-1  ui-icon-battery-2  ui-icon-battery-3
+// ui-icon-circle-plus  ui-icon-circle-minus  ui-icon-circle-close  ui-icon-circle-triangle-e  ui-icon-circle-triangle-s  ui-icon-circle-triangle-w  ui-icon-circle-triangle-n  ui-icon-circle-arrow-e  ui-icon-circle-arrow-s  ui-icon-circle-arrow-w  ui-icon-circle-arrow-n  ui-icon-circle-zoomin  ui-icon-circle-zoomout  ui-icon-circle-check
+// ui-icon-circlesmall-plus  ui-icon-circlesmall-minus  ui-icon-circlesmall-close  ui-icon-squaresmall-plus  ui-icon-squaresmall-minus  ui-icon-squaresmall-close
+// ui-icon-grip-dotted-vertical  ui-icon-grip-dotted-horizontal  ui-icon-grip-solid-vertical  ui-icon-grip-solid-horizontal  ui-icon-gripsmall-diagonal-se  ui-icon-grip-diagonal-se
+
+}

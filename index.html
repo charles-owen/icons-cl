@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <link rel="shortcut icon" href="../img/favicon.ico" /> -->
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+  <style>
+    div {
+      box-sizing: border-box;
+    }
+  </style>
+  <title>Icons</title>
+  <style>
+    div.icon {
+      display: inline-block;
+      width: 15em;
+    }
+  </style>
+<script type="text/javascript" src="icons.js"></script></head>
+<body>
+
+<p id="demo"></p>
+<script>
+    let icons = [
+        'caret-1-n', 'caret-1-ne', 'caret-1-e', 'caret-1-se', 'caret-1-s', 'caret-1-sw', 'caret-1-w', 'caret-1-nw', 'caret-2-n-s', 'caret-2-e-w',
+        'triangle-1-n', 'triangle-1-e',
+        'arrow-1-n', 'arrow-1-w', 'arrowstop-1-n', 'arrowstop-1-s',
+        'arrowthick-1-n', 'arrowthick-1-w',
+        'arrowreturnthick-1-w','arrowreturnthick-1-e',
+        'folder-collapsed', 'folder-open', 'document', 'document-b', 'note', 'mail-closed', 'mail-open',
+            'suitcase', 'comment', 'person', 'print', 'trash', 'locked', 'unlocked', 'bookmark', 'tag',
+        'home', 'flag', 'calculator', 'cart', 'pencil', 'disk', 'calendar',
+            'zoomin', 'zoomout', 'search', 'wrench', 'gear', 'heart', 'start', 'link',
+        'alert', 'help', 'check',
+        'play', 'pause',
+        'close', 'closethick'];
+    icons.forEach(function(icon) {
+        document.getElementById('demo').innerHTML += '<div class="icon"><span class="icons-cl icons-cl-' + icon + '"></span> icons-cl-' + icon + ' </div>';
+    });
+</script>
+</body>
+
+</html>
