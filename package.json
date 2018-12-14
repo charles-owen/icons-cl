@@ -1,6 +1,6 @@
 {
   "name": "icons-cl",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Easy to use icon library",
   "main": "dist/icons.js",
   "module": "src/icons.js",
