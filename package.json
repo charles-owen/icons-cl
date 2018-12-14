@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "description": "Easy to use icon library",
   "main": "dist/icons.js",
+  "module": "src/icons.js",
   "private": false,
   "scripts": {
     "build:dev": "npx webpack --config webpack.dev.js",

@@ -65,6 +65,9 @@
   // ui-icon-triangle-1-ne  ui-icon-triangle-1-e  ui-icon-triangle-1-se  ui-icon-triangle-1-s  ui-icon-triangle-1-sw  ui-icon-triangle-1-w  ui-icon-triangle-1-nw  ui-icon-triangle-2-n-s  ui-icon-triangle-2-e-w
 
 
+  //
+  // Row 3
+  //
   &.icons-cl-arrow-1-n {
     background-position: 0 * -16px -32px;
   }
@@ -83,21 +86,76 @@
 
   // ui-icon-arrow-1-n  ui-icon-arrow-1-ne  ui-icon-arrow-1-e  ui-icon-arrow-1-se  ui-icon-arrow-1-s  ui-icon-arrow-1-sw  ui-icon-arrow-1-nw  ui-icon-arrow-2-n-s  ui-icon-arrow-2-ne-sw  ui-icon-arrow-2-e-w  ui-icon-arrow-2-se-nw  ui-icon-arrowstop-1-n  ui-icon-arrowstop-1-e  ui-icon-arrowstop-1-s  ui-icon-arrowstop-1-w
 
+  //
+  // Row 4
+  //
   &.icons-cl-arrowthick-1-n {
     background-position: 0 * -16px -48px;
   }
 
-  &.icons-cl-arrowthick-1-n {
-    background-position: 0 * -16px -48px;
+  &.icons-cl-arrowthick-1-ne {
+    background-position: 1 * -16px -48px;
+  }
+
+  &.icons-cl-arrowthick-1-e {
+    background-position: 2 * -16px -48px;
+  }
+
+  &.icons-cl-arrowthick-1-se {
+    background-position: 3 * -16px -48px;
+  }
+
+  &.icons-cl-arrowthick-1-s {
+    background-position: 4 * -16px -48px;
+  }
+
+  &.icons-cl-arrowthick-1-sw {
+    background-position: 5 * -16px -48px;
   }
 
   &.icons-cl-arrowthick-1-w {
     background-position: 6 * -16px -48px;
   }
 
+  &.icons-cl-arrowthick-1-nw {
+    background-position: 7 * -16px -48px;
+  }
 
-  // ui-icon-arrowthick-1-ne  ui-icon-arrowthick-1-e  ui-icon-arrowthick-1-se  ui-icon-arrowthick-1-s  ui-icon-arrowthick-1-sw  ui-icon-arrowthick-1-nw  ui-icon-arrowthick-2-n-s  ui-icon-arrowthick-2-ne-sw  ui-icon-arrowthick-2-e-w  ui-icon-arrowthick-2-se-nw  ui-icon-arrowthickstop-1-n  ui-icon-arrowthickstop-1-e  ui-icon-arrowthickstop-1-s  ui-icon-arrowthickstop-1-w
+  &.icons-cl-arrowthick-2-n-s {
+    background-position: 8 * -16px -48px;
+  }
 
+  &.icons-cl-arrowthick-2-ne-sw {
+    background-position: 9 * -16px -48px;
+  }
+
+  &.icons-cl-arrowthick-2-e-w {
+    background-position: 10 * -16px -48px;
+  }
+
+  &.icons-cl-arrowthick-2-se-nw {
+    background-position: 11 * -16px -48px;
+  }
+
+  &.icons-cl-arrowthickstop-1-n {
+    background-position: 12 * -16px -48px;
+  }
+
+  &.icons-cl-arrowthickstop-1-e {
+    background-position: 13 * -16px -48px;
+  }
+
+  &.icons-cl-arrowthickstop-1-s {
+    background-position: 14 * -16px -48px;
+  }
+
+
+  &.icons-cl-arrowthickstop-1-w {
+    background-position: 15 * -16px -48px;
+  }
+
+  //
+  // Row 5
   &.icons-cl-arrowreturnthick-1-w {
     background-position: 0 * -16px -64px;
   }
