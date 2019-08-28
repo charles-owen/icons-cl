@@ -14,11 +14,9 @@ module.exports = merge(common, {
         publicPath: ''
     },
     devServer: {
-        contentBase: path.join(__dirname),
+        contentBase: path.join(__dirname, 'dist'),
         compress: true,
         port: 9000,
-        hot: true,
-        publicPath: '/dist/',
-        index: ''
+        hot: true
     }
 });

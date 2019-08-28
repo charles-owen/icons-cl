@@ -57,14 +57,46 @@
     background-position: 0 * -16px -16px;
   }
 
+  &.icons-cl-triangle-1-ne {
+    background-position: 1 * -16px -16px;
+  }
 
   &.icons-cl-triangle-1-e {
     background-position: 2 * -16px -16px;
   }
 
-  // ui-icon-triangle-1-ne  ui-icon-triangle-1-e  ui-icon-triangle-1-se  ui-icon-triangle-1-s  ui-icon-triangle-1-sw  ui-icon-triangle-1-w  ui-icon-triangle-1-nw  ui-icon-triangle-2-n-s  ui-icon-triangle-2-e-w
+  &.icons-cl-triangle-1-se {
+    background-position: 3 * -16px -16px;
+  }
 
 
+  &.icons-cl-triangle-1-s {
+    background-position: 4 * -16px -16px;
+  }
+
+
+  &.icons-cl-triangle-1-sw {
+    background-position: 5 * -16px -16px;
+  }
+
+
+  &.icons-cl-triangle-1-w {
+    background-position: 6 * -16px -16px;
+  }
+
+
+  &.icons-cl-triangle-1-nw {
+    background-position: 7 * -16px -16px;
+  }
+
+  &.icons-cl-triangle-2-n-s {
+    background-position: 8 * -16px -16px;
+  }
+
+  &.icons-cl-triangle-2-e-w {
+    background-position: 9 * -16px -16px;
+  }
+  
   //
   // Row 3
   //
@@ -80,11 +112,20 @@
     background-position: 12 * -16px -32px;
   }
 
+
+  &.icons-cl-arrowstop-1-e {
+    background-position: 13 * -16px -32px;
+  }
+
   &.icons-cl-arrowstop-1-s {
     background-position: 14 * -16px -32px;
   }
 
-  // ui-icon-arrow-1-n  ui-icon-arrow-1-ne  ui-icon-arrow-1-e  ui-icon-arrow-1-se  ui-icon-arrow-1-s  ui-icon-arrow-1-sw  ui-icon-arrow-1-nw  ui-icon-arrow-2-n-s  ui-icon-arrow-2-ne-sw  ui-icon-arrow-2-e-w  ui-icon-arrow-2-se-nw  ui-icon-arrowstop-1-n  ui-icon-arrowstop-1-e  ui-icon-arrowstop-1-s  ui-icon-arrowstop-1-w
+  &.icons-cl-arrowstop-1-w {
+    background-position: 15 * -16px -32px;
+  }
+
+  // ui-icon-arrow-1-ne  ui-icon-arrow-1-e  ui-icon-arrow-1-se  ui-icon-arrow-1-s  ui-icon-arrow-1-sw  ui-icon-arrow-1-nw  ui-icon-arrow-2-n-s  ui-icon-arrow-2-ne-sw  ui-icon-arrow-2-e-w  ui-icon-arrow-2-se-nw
 
   //
   // Row 4
@@ -197,6 +238,16 @@
   //
   // Row 8
   //
+  $list: cancel  plus  plusthick  minus  minusthick  key  lightbulb  scissors  clipboard  copy  contact  image  video  script;
+  $x: 0;
+
+  @each $item in $list {
+    &.icons-cl-#{$item} {
+      background-position: $x * -16px -128px
+    }
+
+    $x: $x+1;
+  }
 
   &.icons-cl-close {
     background-position: -80px -128px;
@@ -207,31 +258,32 @@
   }
   // ui-icon-cancel  ui-icon-plus  ui-icon-plusthick  ui-icon-minus  ui-icon-minusthick  ui-icon-key  ui-icon-lightbulb  ui-icon-scissors  ui-icon-clipboard  ui-icon-copy  ui-icon-contact  ui-icon-image  ui-icon-video  ui-icon-script
 
-  &.icons-cl-alert {
-    background-position: 0 * -16px 9 * -16px;
+  // Row 9
+  $list: alert info  notice help check  bullet  radio-off  radio-on  pin-w  pin-s;
+  $x: 0;
+
+  @each $item in $list {
+    &.icons-cl-#{$item} {
+      background-position: $x * -16px 9 * -16px
+    }
+
+    $x: $x+1;
   }
 
-  &.icons-cl-help {
-    background-position: 3 * -16px 9 * -16px;
+  //  Row 10
+  $list: play pause seek-next  seek-prev  seek-end  seek-first  stop  eject  volume-off  volume-on;
+  $x: 0;
+
+  @each $item in $list {
+    &.icons-cl-#{$item} {
+      background-position: $x * -16px 10 * -16px
+    }
+
+    $x: $x+1;
   }
 
-  &.icons-cl-check {
-    background-position: 4 * -16px 9 * -16px;
-  }
-
-  // ui-icon-info  ui-icon-notice  ui-icon-bullet  ui-icon-radio-off  ui-icon-radio-on  ui-icon-pin-w  ui-icon-pin-s
-
-  &.icons-cl-play {
-    background-position: 0 * -16px 10 * -16px;
-  }
-
-  &.icons-cl-pause {
-    background-position: 1 * -16px 10 * -16px;
-  }
-
-// ui-icon-seek-next  ui-icon-seek-prev  ui-icon-seek-end  ui-icon-seek-first  ui-icon-stop  ui-icon-eject  ui-icon-volume-off  ui-icon-volume-on
-// ui-icon-power  ui-icon-signal-diag  ui-icon-signal  ui-icon-battery-0  ui-icon-battery-1  ui-icon-battery-2  ui-icon-battery-3
-// ui-icon-circle-plus  ui-icon-circle-minus  ui-icon-circle-close  ui-icon-circle-triangle-e  ui-icon-circle-triangle-s  ui-icon-circle-triangle-w  ui-icon-circle-triangle-n  ui-icon-circle-arrow-e  ui-icon-circle-arrow-s  ui-icon-circle-arrow-w  ui-icon-circle-arrow-n  ui-icon-circle-zoomin  ui-icon-circle-zoomout  ui-icon-circle-check
+ // ui-icon-power  ui-icon-signal-diag  ui-icon-signal  ui-icon-battery-0  ui-icon-battery-1  ui-icon-battery-2  ui-icon-battery-3
+  // ui-icon-circle-plus  ui-icon-circle-minus  ui-icon-circle-close  ui-icon-circle-triangle-e  ui-icon-circle-triangle-s  ui-icon-circle-triangle-w  ui-icon-circle-triangle-n  ui-icon-circle-arrow-e  ui-icon-circle-arrow-s  ui-icon-circle-arrow-w  ui-icon-circle-arrow-n  ui-icon-circle-zoomin  ui-icon-circle-zoomout  ui-icon-circle-check
 // ui-icon-circlesmall-plus  ui-icon-circlesmall-minus  ui-icon-circlesmall-close  ui-icon-squaresmall-plus  ui-icon-squaresmall-minus  ui-icon-squaresmall-close
 // ui-icon-grip-dotted-vertical  ui-icon-grip-dotted-horizontal  ui-icon-grip-solid-vertical  ui-icon-grip-solid-horizontal  ui-icon-gripsmall-diagonal-se  ui-icon-grip-diagonal-se
 

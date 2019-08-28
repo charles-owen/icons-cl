@@ -21,24 +21,44 @@
 <p id="demo"></p>
 <script>
     let icons = [
-        'caret-1-n', 'caret-1-ne', 'caret-1-e', 'caret-1-se', 'caret-1-s', 'caret-1-sw', 'caret-1-w', 'caret-1-nw', 'caret-2-n-s', 'caret-2-e-w',
-        'triangle-1-n', 'triangle-1-e',
-        'arrow-1-n', 'arrow-1-w', 'arrowstop-1-n', 'arrowstop-1-s',
+        'caret-1-n', 'caret-1-ne', 'caret-1-e', 'caret-1-se', 'caret-1-s', 'caret-1-sw', 'caret-1-w', 'caret-1-nw', 'caret-2-n-s', 'caret-2-e-w', null,
+
+        'triangle-1-n', 'triangle-1-ne', 'triangle-1-e', 'triangle-1-se',  'triangle-1-s', 'triangle-1-sw', 'triangle-1-w', 'triangle-1-nw', 'triangle-2-n-w', 'triangle-2-e-w', null,
+
+        'arrow-1-n', 'arrow-1-w', 'arrowstop-1-n', 'arrowstop-1-e', 'arrowstop-1-s', 'arrowstop-1-w', null,
 
 	    'arrowthick-1-n', 'arrowthick-1-ne', 'arrowthick-1-e', 'arrowthick-1-se', 'arrowthick-1-s', 'arrowthick-1-w',
-        'arrowthick-1-nw', 'arrowthick-2-n-s', 'arrowthick-2-ne-sw', 'arrowthick-2-e-w', 'arrowthick-2-se-nw',
-        'arrowthickstop-1-n', 'arrowthickstop-1-e', 'arrowthickstop-1-s', 'arrowthickstop-1-w',
+        'arrowthick-1-nw', 'arrowthick-2-n-s', 'arrowthick-2-ne-sw', 'arrowthick-2-e-w', 'arrowthick-2-se-nw', null,
 
-        'arrowreturnthick-1-w','arrowreturnthick-1-e',
+        'arrowthickstop-1-n', 'arrowthickstop-1-e', 'arrowthickstop-1-s', 'arrowthickstop-1-w', null,
+
+        'arrowreturnthick-1-w','arrowreturnthick-1-e', null,
+
+        // Row 6
         'folder-collapsed', 'folder-open', 'document', 'document-b', 'note', 'mail-closed', 'mail-open',
-            'suitcase', 'comment', 'person', 'print', 'trash', 'locked', 'unlocked', 'bookmark', 'tag',
+            'suitcase', 'comment', 'person', 'print', 'trash', 'locked', 'unlocked', 'bookmark', 'tag', null,
+
+        // Row 7
         'home', 'flag', 'calculator', 'cart', 'pencil', 'disk', 'calendar',
-            'zoomin', 'zoomout', 'search', 'wrench', 'gear', 'heart', 'start', 'link',
-        'alert', 'help', 'check',
-        'play', 'pause',
-        'close', 'closethick'];
+            'zoomin', 'zoomout', 'search', 'wrench', 'gear', 'heart', 'start', 'link', null,
+
+        // Row 8
+        'cancel', 'plus', 'plusthick', 'minus', 'minusthick', 'key', 'lightbulb', 'scissors', 'clipboard', 'copy',
+        'contact', 'image', 'video', 'script', null,
+
+        // Row 9
+        'alert', 'info', 'notice', 'help', 'check', 'bullet', 'radio-off', 'radio-on', 'pin-w', 'pin-s', null,
+
+        // Row 10
+        'play', 'pause', 'seek-next', 'seek-prev', 'seek-end', 'seek-first', 'stop', 'eject', 'volume-off', 'volume-on', null,
+
+        'close', 'closethick', null];
     icons.forEach(function(icon) {
+      if(icon !== null) {
         document.getElementById('demo').innerHTML += '<div class="icon"><span class="icons-cl icons-cl-' + icon + '"></span> icons-cl-' + icon + ' </div>';
+      } else {
+        document.getElementById('demo').innerHTML += '<br><br>'
+      }
     });
 </script>
 </body>
