@@ -2,12 +2,12 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const webpack = require('webpack');
-const HtmlWebpackIncludeAssetsPlugin = require('html-webpack-include-assets-plugin');
+const HtmlWebpackIncludeAssetsPlugin = require('html-webpack-tags-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
-        Dialog: './src/icons.js'
+        Icons: './src/icons.js'
     },
     devServer: {
         contentBase: './dist',
@@ -21,33 +21,18 @@ module.exports = {
             template: 'src/html/index.html',
             inject: 'head'
         }),
-        new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin(),
-        new CopyWebpackPlugin([
-            {
-                from: 'src/img/*.png',
-                to: 'img',
-                flatten: true
-            },
-            {
-                from: 'src/img/*.ico',
-                to: 'img',
-                flatten: true
-            }
-        ])
+        new CopyWebpackPlugin({
+            patterns: [
+                {
+                    from: 'src/images/*.png',
+                    to: 'img',
+                    flatten: true
+                }
+            ]
+        })
     ], module: {
         rules: [
-            {
-                test: /\.js$/,
-                exclude: /(node_modules|bower_components)/,
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['@babel/preset-env'],
-                        plugins: ['@babel/plugin-transform-runtime']
-                    }
-                }
-            },
             {
                 test: /\.(jpe?g|png|gif)$/i,
                 loader:"url-loader",

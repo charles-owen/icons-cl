@@ -4,7 +4,7 @@ const path = require('path');
 
 module.exports = merge(common, {
     mode: 'development',
-    devtool: 'source-map',
+    devtool: 'inline-source-map',
     output: {
         filename: 'icons.js',
         path: path.resolve(__dirname, 'dist'),
@@ -12,11 +12,5 @@ module.exports = merge(common, {
         libraryTarget: 'umd',
         libraryExport: "default",
         publicPath: ''
-    },
-    devServer: {
-        contentBase: path.join(__dirname, 'dist'),
-        compress: true,
-        port: 9000,
-        hot: true
     }
 });
