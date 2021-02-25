@@ -36,7 +36,7 @@ To present the trash can icon, use this HTML:
 Content in the span will be ignored. 
 ## License
 
-Copyright 2018 Michigan State University
+Copyright 2018 Michigan States University
 
 Cirsim is released under the MIT license. Image is Copyright jQuery Foundation.
 
