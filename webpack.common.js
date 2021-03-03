@@ -9,10 +9,6 @@ module.exports = {
     entry: {
         Icons: './src/icons.js'
     },
-    devServer: {
-        contentBase: './dist',
-        hot: true
-    },
     plugins: [
         // new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
